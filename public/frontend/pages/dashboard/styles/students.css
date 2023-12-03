@@ -1,0 +1,42 @@
+.header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header div input{
+    height: 40px;
+    width: 300px;
+    padding: 0 20px;
+    font-size: var(--a--size);
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+/* header  */
+
+.container .content{
+    min-height: 70px;
+    max-height: 700px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px #f2f2f2;
+    overflow-x: scroll;
+}
+table {
+    border-collapse: collapse;
+    width: 120%;
+  }
+  td, th {
+    text-align: left;
+    padding: 8px;
+    padding: 20px;
+    font-size: var(--p--size);
+  }
+  tr{
+    width: 100%;
+    overflow-x: scroll;
+  }
+  tr:nth-child(even) {
+    background-color: #f8f8f8;
+  }

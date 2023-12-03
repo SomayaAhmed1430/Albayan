@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      /* overflow-x: hidden; */
+    }
+    .comments {
+      min-height: 100vh;
+      width: 500%;
+      display: flex;
+      align-items: center;
+      border: 1px solid red;
+    }
+    .comments .comment {
+      border: 1px solid black;
+      min-height: 100vh;
+      width: 20%;
+      background: #44dd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .comments .comment p {
+      width: 20%;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="comments">
+      <div class="comment">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          minima quas, aliquid vitae magnam quod vero eos alias iste accusamus
+          et libero sunt totam amet ex commodi reprehenderit saepe distinctio?
+        </p>
+      </div>
+      <div class="comment">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          minima quas, aliquid vitae magnam quod vero eos alias iste accusamus
+          et libero sunt totam amet ex commodi reprehenderit saepe distinctio?
+        </p>
+      </div>
+      <div class="comment">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          minima quas, aliquid vitae magnam quod vero eos alias iste accusamus
+          et libero sunt totam amet ex commodi reprehenderit saepe distinctio?
+        </p>
+      </div>
+      <div class="comment">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          minima quas, aliquid vitae magnam quod vero eos alias iste accusamus
+          et libero sunt totam amet ex commodi reprehenderit saepe distinctio?
+        </p>
+      </div>
+      <div class="comment">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          minima quas, aliquid vitae magnam quod vero eos alias iste accusamus
+          et libero sunt totam amet ex commodi reprehenderit saepe distinctio?
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const comments = document.querySelector(".comments");
+
+    setTimeout(() => {
+      setInterval(() => {
+        scrollBy({
+          left: innerWidth,
+          behavior: "smooth",
+        });
+      }, 1000);
+      setTimeout(() => {
+        setInterval(() => {
+          scrollBy({
+            right: innerWidth,
+            behavior: "smooth",
+          });
+        }, 1000);
+      }, 10000);
+    }, 0);
+
+    setTimeout(() => {
+      console.log("5s");
+    }, 5000);
+  </script>
+</html>

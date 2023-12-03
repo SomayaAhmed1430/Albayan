@@ -1,0 +1,149 @@
+.section1 {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1::before {
+  content: "";
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  height: 500px;
+  width: 500px;
+  background: var(--accent-color);
+  opacity: 0.7;
+  filter: blur(350px);
+  z-index: -1;
+}
+.section1::after {
+  content: "";
+  position: fixed;
+  bottom: 20vh;
+  right: -200px;
+  height: 700px;
+  width: 700px;
+  background: #ffe4d6;
+  opacity: 0.7;
+  filter: blur(150px);
+  z-index: -1;
+}
+.section1 .text {
+  height: 600px;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section1 .text p {
+  padding: 20px 0;
+}
+.section1 .text h1 {
+  font-size: 50px;
+}
+.section1 .text a {
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+  color: white;
+  border-radius: 100px;
+  width: 200px;
+  padding: 0.3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section1 .image {
+  height: 500px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.section1 .image img {
+  height: auto;
+  width: 90%;
+}
+/* section one  */
+
+.section2 {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  padding: 100px 0;
+}
+/* section 2  */
+
+.section3 {
+  min-height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 45% 1fr;
+}
+.section3 .image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section3 .text{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section3 .text h3{
+  padding: 10px 0;
+}
+/* section3 */
+
+.section4{
+  min-height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns:  55% 1fr;
+  overflow: hidden;
+}
+.section4 .text{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section4 .text h3{
+  padding: 10px 0;
+}
+.section4 .image{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform: translateY(100px);
+}
+/* section4 */
+
+.section5{
+  min-height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns:  45% 1fr;
+  padding: 0 0 100px 0;
+}
+.section5 .image{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform: translateY(70px);
+}
+.section5 .text{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section5 .text h3{
+  padding: 10px 0;
+}
